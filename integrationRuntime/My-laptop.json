@@ -1,0 +1,6 @@
+{
+	"name": "My-laptop",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
