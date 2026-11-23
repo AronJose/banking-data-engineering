@@ -1,0 +1,61 @@
+{
+	"name": "banking_Dataset_01",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "first_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "last_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "dob",
+				"type": "date"
+			},
+			{
+				"name": "gender",
+				"type": "char"
+			},
+			{
+				"name": "pan_number",
+				"type": "char"
+			},
+			{
+				"name": "kyc_status",
+				"type": "varchar"
+			},
+			{
+				"name": "created_at",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "modified_at",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "sys_updated_at",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "finance",
+			"table": "CUSTOMERS"
+		}
+	}
+}
