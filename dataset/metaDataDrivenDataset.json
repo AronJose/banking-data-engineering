@@ -1,0 +1,30 @@
+{
+	"name": "metaDataDrivenDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Source_schema": {
+				"type": "string"
+			},
+			"Source_table": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().Source_schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().Source_table",
+				"type": "Expression"
+			}
+		}
+	}
+}
