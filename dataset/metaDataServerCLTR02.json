@@ -1,0 +1,45 @@
+{
+	"name": "metaDataServerCLTR02",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "source_schema",
+				"type": "nvarchar"
+			},
+			{
+				"name": "source_table",
+				"type": "nvarchar"
+			},
+			{
+				"name": "target_location",
+				"type": "nvarchar"
+			},
+			{
+				"name": "target_schema",
+				"type": "nvarchar"
+			},
+			{
+				"name": "target_table",
+				"type": "nvarchar"
+			},
+			{
+				"name": "is_active",
+				"type": "bit"
+			},
+			{
+				"name": "load_type",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "ctrl",
+			"table": "LOAD_CONTROL"
+		}
+	}
+}
